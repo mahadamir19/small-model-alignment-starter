@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: small-model-alignment-starter
+Version: 0.1.0
+Summary: Starter files for a small-model SFT and DPO alignment assignment.
+Requires-Python: >=3.10
