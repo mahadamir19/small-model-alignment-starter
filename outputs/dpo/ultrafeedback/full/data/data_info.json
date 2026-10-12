@@ -1,0 +1,21 @@
+{
+  "dataset_name": "HuggingFaceH4/ultrafeedback_binarized",
+  "train_split": "train_prefs",
+  "val_split": "test_prefs",
+  "seed": 42,
+  "train_examples": 15000,
+  "val_examples": 1000,
+  "train_exclusions": {
+    "format": 0,
+    "empty": 154,
+    "duplicate": 0,
+    "length": 3420
+  },
+  "val_exclusions": {
+    "format": 0,
+    "empty": 11,
+    "duplicate": 0,
+    "length": 190
+  },
+  "prompt_template": "### Instruction:\n{instruction}\n\n### Response:\n"
+}

@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Anthropic/hh-rlhf",
+  "train_split": "train",
+  "val_split": "test",
+  "seed": 42,
+  "train_examples": 15000,
+  "val_examples": 1000,
+  "train_exclusions": {
+    "format": 34982,
+    "empty": 22,
+    "duplicate": 104,
+    "length": 72
+  },
+  "val_exclusions": {
+    "format": 2474,
+    "empty": 5,
+    "duplicate": 18,
+    "length": 7
+  },
+  "prompt_template": "### Instruction:\n{instruction}\n\n### Response:\n"
+}

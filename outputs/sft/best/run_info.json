@@ -1,0 +1,28 @@
+{
+  "config": {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "dataset_name": "HuggingFaceH4/ultrachat_200k",
+    "train_split": "train_sft",
+    "val_split": "test_sft",
+    "train_examples": 30000,
+    "val_examples": 1000,
+    "max_length": 512,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 16,
+    "num_epochs": 1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.1,
+    "warmup_ratio": 0.03,
+    "max_grad_norm": 1.0,
+    "eval_every_steps": 100,
+    "log_every_steps": 10,
+    "seed": 42,
+    "use_fp16": true,
+    "gradient_checkpointing": true,
+    "shuffle_buffer_size": 10000,
+    "output_dir": "/kaggle/working/outputs/sft"
+  },
+  "step": 926,
+  "epoch": 1,
+  "val_loss": 365.47537720680236
+}

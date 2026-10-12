@@ -1,0 +1,12 @@
+{
+  "eval_set": "alpaca_eval",
+  "seed": 42,
+  "max_pairs": null,
+  "pair_count": 300,
+  "sft_path": "/kaggle/working/outputs/eval/generations/alpaca_eval/sft.json",
+  "dpo_path": "/kaggle/working/outputs/eval/generations/alpaca_eval/ultrafeedback_dpo.json",
+  "sft_sha256": "b795835fbd2913ea72f24159a5dddfbf5754165d826bc126104149e0d63bbe64",
+  "dpo_sha256": "298e8ae790e6b71c4bc11592f73b727d61d878f666e859f66062f26054bc6050",
+  "response_a_sft_count": 150,
+  "response_a_dpo_count": 150
+}

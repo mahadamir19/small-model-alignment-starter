@@ -1,0 +1,26 @@
+{
+  "evaluation_set": "alpaca_eval",
+  "judge_model": "google/gemini-3.6-flash",
+  "mode": "kaggle",
+  "dpo_model": "ultrafeedback_dpo",
+  "total_pairs": 300,
+  "judged_pairs": 290,
+  "failed_pairs": 10,
+  "unknown_pairs": 0,
+  "dpo_wins": 117,
+  "sft_wins": 133,
+  "ties": 40,
+  "dpo_win_rate_including_ties": 0.40344827586206894,
+  "dpo_win_rate_excluding_ties": 0.468,
+  "dpo_tie_adjusted_win_rate": 0.4724137931034483,
+  "sft_win_rate_including_ties": 0.4586206896551724,
+  "tie_rate": 0.13793103448275862,
+  "failure_rate": 0.03333333333333333,
+  "by_category": {
+    "uncategorized": {
+      "dpo_wins": 117,
+      "sft_wins": 133,
+      "ties": 40
+    }
+  }
+}

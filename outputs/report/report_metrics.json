@@ -1,0 +1,154 @@
+{
+  "run_mode": "full",
+  "git": {
+    "url": "https://github.com/mahadamir19/small-model-alignment-starter",
+    "commit": "45835ea9d29a49d3b4301d97a410ab6e68a1ddd0",
+    "run_mode": "full",
+    "captured_utc": "2026-10-11T18:11:58.570841+00:00"
+  },
+  "environment": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "datasets": "4.8.5",
+    "trl": "0.24.0",
+    "peft": "0.21.2",
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ]
+  },
+  "sft_best": {
+    "epoch": 1,
+    "step": 926,
+    "val_loss": 365.47537720680236
+  },
+  "hh_rlhf_dpo_best": {
+    "epoch": 1,
+    "step": 400,
+    "val_loss": 0.6319511742647738,
+    "reward_accuracy": 0.651,
+    "reward_margin": 0.2379226740327431,
+    "val_pairs": 1000
+  },
+  "ultrafeedback_dpo_best": {
+    "epoch": 1,
+    "step": 461,
+    "val_loss": 0.5648369222941692,
+    "reward_accuracy": 0.7,
+    "reward_margin": 0.5713735707030282,
+    "val_pairs": 1000
+  },
+  "lora_eval": {
+    "epoch": 3.0,
+    "eval_logits/chosen": 0.48417389392852783,
+    "eval_logits/rejected": 0.11498429626226425,
+    "eval_logps/chosen": -173.24876403808594,
+    "eval_logps/rejected": -123.49697875976562,
+    "eval_loss": 0.6816487312316895,
+    "eval_rewards/accuracies": 1.0,
+    "eval_rewards/chosen": 0.020406965166330338,
+    "eval_rewards/margins": 0.023149162530899048,
+    "eval_rewards/rejected": -0.0027421952690929174,
+    "eval_runtime": 5.9753,
+    "eval_samples_per_second": 7.364,
+    "eval_steps_per_second": 7.364
+  },
+  "hh_rlhf_judging": {
+    "evaluation_set": "hh_rlhf",
+    "judge_model": "google/gemini-3.6-flash",
+    "mode": "kaggle",
+    "dpo_model": "hh_dpo",
+    "total_pairs": 300,
+    "judged_pairs": 300,
+    "failed_pairs": 0,
+    "unknown_pairs": 0,
+    "dpo_wins": 170,
+    "sft_wins": 84,
+    "ties": 46,
+    "dpo_win_rate_including_ties": 0.5666666666666667,
+    "dpo_win_rate_excluding_ties": 0.6692913385826772,
+    "dpo_tie_adjusted_win_rate": 0.6433333333333333,
+    "sft_win_rate_including_ties": 0.28,
+    "tie_rate": 0.15333333333333332,
+    "failure_rate": 0.0,
+    "by_category": {
+      "harmful_instructions": {
+        "dpo_wins": 12,
+        "sft_wins": 12,
+        "ties": 6
+      },
+      "benign_helpfulness": {
+        "dpo_wins": 15,
+        "sft_wins": 14,
+        "ties": 1
+      },
+      "legal_financial_safety": {
+        "dpo_wins": 17,
+        "sft_wins": 10,
+        "ties": 3
+      },
+      "hate_or_harassment": {
+        "dpo_wins": 14,
+        "sft_wins": 11,
+        "ties": 5
+      },
+      "safe_transformation": {
+        "dpo_wins": 21,
+        "sft_wins": 6,
+        "ties": 3
+      },
+      "cyber_abuse": {
+        "dpo_wins": 15,
+        "sft_wins": 8,
+        "ties": 7
+      },
+      "calibration_and_uncertainty": {
+        "dpo_wins": 20,
+        "sft_wins": 4,
+        "ties": 6
+      },
+      "privacy_and_doxxing": {
+        "dpo_wins": 19,
+        "sft_wins": 4,
+        "ties": 7
+      },
+      "medical_safety": {
+        "dpo_wins": 19,
+        "sft_wins": 9,
+        "ties": 2
+      },
+      "self_harm_support": {
+        "dpo_wins": 18,
+        "sft_wins": 6,
+        "ties": 6
+      }
+    }
+  },
+  "alpaca_eval_judging": {
+    "evaluation_set": "alpaca_eval",
+    "judge_model": "google/gemini-3.6-flash",
+    "mode": "kaggle",
+    "dpo_model": "ultrafeedback_dpo",
+    "total_pairs": 300,
+    "judged_pairs": 290,
+    "failed_pairs": 10,
+    "unknown_pairs": 0,
+    "dpo_wins": 117,
+    "sft_wins": 133,
+    "ties": 40,
+    "dpo_win_rate_including_ties": 0.40344827586206894,
+    "dpo_win_rate_excluding_ties": 0.468,
+    "dpo_tie_adjusted_win_rate": 0.4724137931034483,
+    "sft_win_rate_including_ties": 0.4586206896551724,
+    "tie_rate": 0.13793103448275862,
+    "failure_rate": 0.03333333333333333,
+    "by_category": {
+      "uncategorized": {
+        "dpo_wins": 117,
+        "sft_wins": 133,
+        "ties": 40
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "eval_set": "hh_rlhf",
+  "seed": 42,
+  "max_pairs": null,
+  "pair_count": 300,
+  "sft_path": "/kaggle/working/outputs/eval/generations/hh_rlhf/sft.json",
+  "dpo_path": "/kaggle/working/outputs/eval/generations/hh_rlhf/hh_dpo.json",
+  "sft_sha256": "34c8682c59e02ea2750b01a3a6193f156d0d1d9d95a112185eac91129df70438",
+  "dpo_sha256": "d74dcaf5c4a442187f8404a87b25ace26f3f993ef66e3ec654b2f31d8cb5685e",
+  "response_a_sft_count": 150,
+  "response_a_dpo_count": 150
+}

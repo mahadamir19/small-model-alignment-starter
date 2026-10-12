@@ -1,0 +1,32 @@
+{
+  "config": {
+    "track": "ultrafeedback",
+    "sft_checkpoint": "/kaggle/working/outputs/sft/best",
+    "train_examples": 15000,
+    "val_examples": 1000,
+    "max_length": 512,
+    "max_prompt_length": 256,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 32,
+    "num_epochs": 1,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.0,
+    "beta": 0.1,
+    "max_grad_norm": 1.0,
+    "eval_every_steps": 100,
+    "log_every_steps": 10,
+    "seed": 42,
+    "use_fp16": true,
+    "gradient_checkpointing": true,
+    "output_root": "/kaggle/working/outputs/dpo",
+    "run_name": "full"
+  },
+  "step": 461,
+  "epoch": 1,
+  "validation": {
+    "val_loss": 0.5648369222941692,
+    "reward_accuracy": 0.7,
+    "reward_margin": 0.5713735707030282,
+    "val_pairs": 1000
+  }
+}

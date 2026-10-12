@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "pairs_sha256": "54e0e2ab910ddd231f3dcec8c096dddfd81c0ca678f19911354b43fa105e2ca6",
+  "answer_key_sha256": "355d30e23ae0a2f6cf70a3fd73e2ba0492b81111b131cf7255295e72ced935ec",
+  "judge_model": "google/gemini-3.6-flash",
+  "mode": "kaggle",
+  "prompt_version": "pairwise_judge_v1"
+}

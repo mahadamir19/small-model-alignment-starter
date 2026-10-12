@@ -1,0 +1,12 @@
+{
+  "dataset": "HuggingFaceH4/ultrachat_200k",
+  "train_split": "train_sft",
+  "validation_split": "test_sft",
+  "train_examples": 30000,
+  "validation_examples": 1000,
+  "seed": 42,
+  "validation_seed": 43,
+  "max_length": 512,
+  "selection": "First user-assistant exchange per dialogue, unique prompts, prompt-length filtered",
+  "prompt_template": "### Instruction:\n{instruction}\n\n### Response:\n"
+}

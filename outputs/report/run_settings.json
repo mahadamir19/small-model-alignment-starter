@@ -1,0 +1,12 @@
+{
+  "run_mode": "full",
+  "real_judge": true,
+  "eval_count": 300,
+  "git_url": "https://github.com/mahadamir19/small-model-alignment-starter",
+  "commit": "45835ea9d29a49d3b4301d97a410ab6e68a1ddd0",
+  "output_dir": "/kaggle/working/outputs",
+  "max_prompt_tokens": 256,
+  "max_new_tokens": 256,
+  "max_total_tokens": 512,
+  "prior_outputs_source": null
+}
